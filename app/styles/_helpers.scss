@@ -1,0 +1,65 @@
+html,
+body {
+  height: 100%;
+  font-family: 'GOSTUI2';
+}
+
+a {
+  transition: $tr;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+
+  li {
+    list-style-type: none;
+  }
+}
+
+// footerFlex down
+.mainWrap {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.contentWrap {
+  flex: 1 0 auto;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid $mc;
+  z-index: 1;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: $tr;
+
+  i {
+    font-size: 13px;
+    color: $mc;
+  }
+
+  &:hover {
+    transform: scale(1.5) rotate(360deg);
+    border: 1px solid red;
+
+    i {
+      color: red;
+    }
+  }
+}
+
+// footerFlex down end

@@ -1,0 +1,55 @@
+  .share {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    display: flex;
+
+    p {
+      margin-right: 10px;
+      font-size: 12px;
+      margin-bottom: 0;
+    }
+
+    .likely {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      margin-top: -10px;
+
+      div {
+        border: 1.5px solid $tc;
+        width: 20px;
+        height: 20px;
+        border-radius: 100%;
+        transition: $tr;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        i {
+          font-size: 11px;
+          color: $tc;
+        }
+
+        &:hover {
+          transform: scale(1.5) rotate(360deg);
+        }
+
+        .likely__icon {
+          display: none;
+        }
+      }
+
+      .whithoutBorder {
+        border: none;
+        i{
+          font-size: 20px;
+        }
+      }
+
+      .likely .likely__widget {
+        background-color: transparent !important;
+      }
+    }
+  }

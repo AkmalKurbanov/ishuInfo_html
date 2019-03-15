@@ -1,0 +1,22 @@
+// Required bootstrap don't touch
+@import "./node_modules/bootstrap/scss/functions";
+@import "./node_modules/bootstrap/scss/variables";
+@import "./node_modules/bootstrap/scss/mixins";
+// End bootstrap
+
+
+// Optional bootstrap
+@import "./node_modules/bootstrap/scss/reboot";
+@import "./node_modules/bootstrap/scss/grid";
+// End optional
+
+@import "../fonts/fontawesome5/web-fonts-with-css/css/fontawesome-all.min.css";
+@import "_fonts";
+@import "_vars";
+@import "_helpers";
+@import "_header";
+@import "_autorization";
+@import "_filter";
+@import "_share";
+@import "_modalWindows";
+@import "_footer";
