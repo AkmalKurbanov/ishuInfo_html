@@ -8,9 +8,11 @@
 // Optional bootstrap
 @import "./node_modules/bootstrap/scss/reboot";
 @import "./node_modules/bootstrap/scss/grid";
+@import "./node_modules/bootstrap/scss/nav";
 // End optional
 
 @import "../fonts/fontawesome5/web-fonts-with-css/css/fontawesome-all.min.css";
+@import "../fonts/icon/css/icon.css";
 @import "_fonts";
 @import "_vars";
 @import "_helpers";

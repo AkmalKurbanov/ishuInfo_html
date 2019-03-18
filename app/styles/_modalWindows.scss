@@ -19,6 +19,8 @@
       border-radius: 0px 15px;
       position: relative;
       overflow: hidden;
+      display: flex;
+      flex-direction: row;
     }
 
     &__logoSide {
@@ -48,7 +50,162 @@
     }
 
     &__registrationSide {
-      background-color: $tc;
+      width: 100%;
+      max-width: 100%;
+      padding: 37px;
+    }
+
+    &__input {
+      width: 100%;
+      max-width: 100%;
+      border: none;
+      border-bottom: 1px solid #D0D0D0;
+      outline: none;
+      font-size: 12px;
+      color: $tc;
+      font-weight: 700;
+
+      &--registrationInput {
+        padding-left: 27px;
+      }
+    }
+
+    ::-webkit-input-placeholder {
+      color: rgba(51, 51, 51, 0.54);
+      font-size: 12px;
+    }
+
+    ::-moz-placeholder {
+      color: rgba(51, 51, 51, 0.54);
+      font-size: 12px;
+    }
+
+
+    :-moz-placeholder {
+      color: rgba(51, 51, 51, 0.54);
+      font-size: 12px;
+    }
+
+
+    :-ms-input-placeholder {
+      color: rgba(51, 51, 51, 0.54);
+      font-size: 12px;
+    }
+
+    &__inputWrap {
+      position: relative;
+      margin-bottom: 15px;
+
+      i {
+        position: absolute;
+        left: 0;
+        font-size: 13px;
+        bottom: 2px;
+      }
+
+      .icon-envelope {
+        font-size: 10px;
+        bottom: 5px;
+      }
+    }
+
+    &__signIn {
+      text-align: center;
+      margin-top: 25px;
+    }
+  }
+
+  form {
+    margin-top: 30px;
+
+    input[type=password] {
+      font-size: 20px;
+      margin-bottom: 0;
+    }
+
+    label {
+      font-size: 12px;
+      color: $mc;
+      font-weight: 600;
+      cursor: pointer;
+      margin: 0;
+    }
+
+    .forget {
+      font-size: 10px;
+      text-decoration: underline;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.32);
+      text-decoration: none;
+      color: rgba(0, 0, 0, 0.32);
+
+      &:hover {
+        border-bottom: none;
+      }
+    }
+
+    .btn {
+      background-color: #85C800;
+      border-radius: 45px;
+      border: none;
+      padding: 2px 40px;
+      color: $w;
+      font-weight: 600;
+      font-size: 20px;
+      display: block;
+      margin: auto;
+      margin-top: 20px;
+      position: relative;
+      transition: $tr;
+
+      &:hover {
+        &:before {
+          transform: scale(2);
+        }
+      }
+    }
+
+    p {
+      font-size: 11px;
+      color: $tc;
+      line-height: 19px;
+      margin-bottom: 5px;
+
+      a {
+        color: $mc;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .nav-tabs {
+    border: none;
+
+    .nav-link {
+      border: none;
+      border-radius: 0;
+      padding: 0;
+      background-color: transparent;
+      color: $tc;
+      transition: $tr;
+      font-size: 20px;
+      padding-bottom: 5px;
+      padding-right: 45px;
+      margin-right: 2px;
+
+      &:hover {
+        font-weight: 700;
+        color: $mc;
+        border-bottom: 2px solid $mc;
+      }
+    }
+
+    .active {
+      font-weight: 700;
+      color: $mc;
+      border-bottom: 2px solid $mc;
     }
   }
 }
