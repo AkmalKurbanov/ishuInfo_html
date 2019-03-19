@@ -7,6 +7,15 @@
   align-items: center;
   justify-content: space-between;
 
+  @media (max-width: 575.98px) {
+    margin: auto;
+  }
+
+  @media (max-width: 399.98px) {
+    margin-left: 0;
+  }
+
+
   &__link {
     color: $tc;
     font-weight: 400;

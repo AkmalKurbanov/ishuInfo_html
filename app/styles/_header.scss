@@ -1,6 +1,12 @@
 .header {
+  padding: 20px 0;
+  .container {
+    @media (max-width: 991.98px) {
+      position: relative;
+    }
+  }
+
   &__navWrap {
-    min-height: 70px;
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -8,13 +14,23 @@
   }
 
   &__logo {
-    margin-right: 40px;
-
     a {
       color: $tc;
       font-weight: 700;
       line-height: normal;
       font-size: 24px;
+    }
+  }
+
+  &__mnu {
+    @media (max-width: 991.98px) {
+      width: 100%;
+      max-width: 100%;
+      margin-top: 10px;
+    }
+
+    @media (max-width: 575.98px) {
+      display: none;
     }
   }
 
@@ -24,7 +40,12 @@
     justify-content: space-between;
     flex-direction: row;
     width: 600px;
-    max-width: 700px;
+
+    @media (max-width: 991.98px) {
+      width: 100%;
+      max-width: 100%;
+    }
+
 
     li {
       // margin-right: 4.3%;
@@ -34,6 +55,10 @@
         font-weight: 600;
         color: $tc;
         position: relative;
+
+        &:hover {
+          color: $mc;
+        }
 
         i {
           font-size: 25px;
@@ -63,14 +88,33 @@
     z-index: 999999;
     background-color: $w;
 
+    @media (max-width: 1050.98px) {
+      right: -20px;
+    }
+
+    @media (max-width: 767.98px) {
+      background-color: transparent;
+      box-shadow: none;
+      position: relative;
+    }
+
     li {
       margin-bottom: 8px;
+
+      @media (max-width: 767.98px) {
+        margin-bottom: 0;
+      }
 
       a {
         position: relative;
         color: #747474;
         padding-left: 25px;
         display: block;
+
+        @media (max-width: 767.98px) {
+          padding-left: 20px;
+        }
+
 
         &:before {
           position: absolute;
@@ -83,6 +127,10 @@
           opacity: 0;
           transition: $tr;
           color: $mc;
+
+          @media (max-width: 767.98px) {
+            display: none;
+          }
         }
 
         &:hover {
@@ -91,6 +139,13 @@
             opacity: 1;
           }
         }
+      }
+    }
+
+    .mm-listitem__text {
+      @media (max-width: 767.98px) {
+        max-width: 100%;
+        width: 100%;
       }
     }
   }
