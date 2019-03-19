@@ -63,11 +63,7 @@ button {
 
 .mm-listitem__btn:not(.mm-listitem__text) {
   position: absolute;
-  right: 30%;
-
-  @media (max-width: 510.98px) {
-    right: 55%;
-  }
+  right: 0;
 }
 
 #mm-3 {
@@ -76,3 +72,23 @@ button {
 
 
 // mmenu end
+
+
+
+// caption
+.captionWrap {
+  padding-bottom: 15px;
+
+  .caption {
+    font-size: 24px;
+    color: $b;
+    margin-bottom: 0;
+    padding-left: 30px;
+
+    @media (max-width: 575.98px) {
+      padding-left: 0;
+    }
+  }
+}
+
+// caption end

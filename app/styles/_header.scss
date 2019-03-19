@@ -1,5 +1,6 @@
 .header {
   padding: 20px 0;
+
   .container {
     @media (max-width: 991.98px) {
       position: relative;
@@ -14,6 +15,12 @@
   }
 
   &__logo {
+    padding-left: 30px;
+
+    @media (max-width: 575.98px) {
+      padding-left: 0;
+    }
+
     a {
       color: $tc;
       font-weight: 700;
@@ -48,7 +55,6 @@
 
 
     li {
-      // margin-right: 4.3%;
       position: relative;
 
       a {
