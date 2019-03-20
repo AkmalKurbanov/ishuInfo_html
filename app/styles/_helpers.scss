@@ -85,6 +85,10 @@ button {
     margin-bottom: 0;
     padding-left: 30px;
 
+    @media (max-width: 991.98px) {
+      padding-left: 15px;
+    }
+
     @media (max-width: 575.98px) {
       padding-left: 0;
     }
@@ -92,3 +96,24 @@ button {
 }
 
 // caption end
+
+
+// button
+.btn {
+  background-color: $sc;
+  color: $w;
+  font-weight: 600;
+  border-radius: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: $tr;
+  position: relative;
+
+  &:hover {
+    box-shadow: 0 8px 16px 0 rgba(26, 166, 183, .3);
+  }
+}
+
+// button end
