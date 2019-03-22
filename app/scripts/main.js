@@ -25,7 +25,7 @@ $(document).ready(function () {
     $('.closeBtn').removeClass('closeBtnLeft');
   });
   $('.registration-js').on('click', function () {
-    $('.blurEffect').css('display', 'flex');
+    $('#autorization').css('display', 'flex');
   });
   $('.closeBtn').on('click', function () {
     $('.blurEffect').hide();
@@ -49,7 +49,7 @@ $(document).ready(function () {
   });
 
   $(document).mouseup(function (e) {
-    var div = $(".hamburger");
+    var div = $('.hamburger');
     if (!div.is(e.target) &&
       div.has(e.target).length === 0) {
       div.removeClass('openClose');
@@ -83,6 +83,40 @@ $(document).ready(function () {
 
 
 
+
+
+// rating
+$(
+  function () {
+    $('li').on('click', function() {
+      var selectedCssClass = 'selected';
+      var $this = $(this);
+      $this.siblings('.' + selectedCssClass).removeClass(selectedCssClass);
+      $this
+        .addClass(selectedCssClass)
+        .parent().addClass('vote-cast');
+    });
+  }
+);
+// rating end
+
+
+// service slider 
+ var galleryThumbs = new Swiper('.gallery-thumbs', {
+      spaceBetween: 10,
+      slidesPerView: 4,
+      freeMode: true,
+      watchSlidesVisibility: true,
+      watchSlidesProgress: true,
+         direction: 'vertical',
+    });
+    var galleryTop = new Swiper('.gallery-top', {
+      spaceBetween: 10,
+       thumbs: {
+        swiper: galleryThumbs
+      }
+    });
+// service slider end
 
 
 

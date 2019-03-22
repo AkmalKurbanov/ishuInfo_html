@@ -4,7 +4,10 @@
     top: 15px;
     display: flex;
     align-items: center;
-
+    padding-right: 30px;
+    @media (max-width: 575.98px)  {
+      padding-right: 0;
+    }
     p {
       margin-right: 10px;
       font-size: 12px;

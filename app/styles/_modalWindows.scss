@@ -1,3 +1,4 @@
+
 .blurEffect {
   background-color: rgba(0, 0, 0, 0.3);
   position: fixed;
@@ -10,13 +11,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  display: none;
   z-index: 9999999;
   padding: 0 15px;
-
-  &--blurEffectDone {
-    display: block;
-  }
 
   .registration {
     &__modalWindow {
@@ -28,37 +24,6 @@
       overflow: hidden;
       display: flex;
       flex-direction: row;
-
-      .closeBtn {
-        position: absolute;
-        top: 25px;
-        right: 25px;
-        width: 20px;
-        height: 20px;
-        border: 1px solid $mc;
-        z-index: 1;
-        border-radius: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-        transition: $tr;
-
-        i {
-          font-size: 13px;
-          color: $mc;
-        }
-
-        &:hover {
-          transform: scale(1.5) rotate(360deg);
-          border: 1px solid red;
-
-          i {
-            color: red;
-          }
-        }
-      }
-
       .closeBtnLeft {
         border: 1px solid $w;
 
@@ -309,7 +274,7 @@
   &__window {
     max-width: 726px;
     width: 100%;
-    min-height: 471px;
+    min-height: 470px;
     background: $w;
     box-shadow: 0px 2px 30px rgba(211, 225, 248, 0.8);
     border-radius: 20px;
@@ -317,13 +282,21 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+        position: relative;
+        padding: 0 15px;
+        @media (max-width: 575.98px){
+                min-height: 350px;
+        }
   }
 
   &__img {
     max-width: 112px;
     width: 100%;
     margin-bottom: 30px;
+ @media (max-width: 575.98px){
+ max-width: 90px;
 
+ }
     img {
       width: 100%;
       max-width: 100%;
@@ -336,6 +309,9 @@
     color: $tc;
     line-height: normal;
     margin-bottom: 20px;
+    @media (max-width: 575.98px) {
+    font-size: 17px;
+        }
   }
 
   .btn {
@@ -345,3 +321,48 @@
     font-size: 24px;
   }
 }
+
+
+
+
+
+  .closeBtn {
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        width: 20px;
+        height: 20px;
+        border: 1px solid $mc;
+        z-index: 1;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: $tr;
+
+        i {
+          font-size: 13px;
+          color: $mc;
+        }
+
+        &:hover {
+          transform: scale(1.5) rotate(360deg);
+          border: 1px solid red;
+
+          i {
+            color: red;
+          }
+        }
+      }
+
+
+
+
+      #autorization {
+  display: none;
+}
+
+#done {
+  display: none;
+  }

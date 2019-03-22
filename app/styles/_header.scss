@@ -12,16 +12,14 @@
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
+    padding: 0 30px;
+    &--inner {
+      padding: 0;
+    }
   }
 
   &__logo {
-    padding-left: 30px;
-
-    @media (max-width: 575.98px) {
-      padding-left: 0;
-    }
-
-    a {
+        a {
       color: $tc;
       font-weight: 700;
       line-height: normal;
@@ -44,19 +42,27 @@
   &__mnuFirstLvl {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
     flex-direction: row;
-    width: 600px;
-
+  
     @media (max-width: 991.98px) {
       width: 100%;
       max-width: 100%;
+    justify-content: center;
     }
 
 
     li {
       position: relative;
+      margin-left: 4.2%;
 
+    @media (max-width: 767.98px){
+      margin-left: 2%;
+
+    }
+      &:first-child {
+        margin-left: 0;
+      }
       a {
         font-weight: 600;
         color: $tc;
